@@ -1,0 +1,13 @@
+
+<!-- table ile tablo oluşurulur.
+tr ile tablonun satırı oluşturulur.
+td ile sütunlar oluşturulur. 
+table dan sonraki class="table" bootstrap den geliyor-->
+<table class="table">
+    <tr *ngFor="let product of products">
+        <td>{{product.productId}}</td>
+        <td>{{product.productName}}</td>
+        <td>{{product.categoryId}}</td>
+        <td>{{product.unitPrice}}</td>
+    </tr>
+</table>
